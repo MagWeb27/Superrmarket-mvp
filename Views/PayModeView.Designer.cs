@@ -42,7 +42,7 @@
             TxtSearch = new TextBox();
             label2 = new Label();
             tabPagePayModeDetail = new TabPage();
-            button2 = new Button();
+            BtnCancel = new Button();
             BtnSave = new Button();
             TxtPayModeObservation = new TextBox();
             TxtPayModeName = new TextBox();
@@ -136,6 +136,7 @@
             BtnDelete.Size = new Size(211, 54);
             BtnDelete.TabIndex = 6;
             BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // BtnEdit
             // 
@@ -200,7 +201,7 @@
             // 
             // tabPagePayModeDetail
             // 
-            tabPagePayModeDetail.Controls.Add(button2);
+            tabPagePayModeDetail.Controls.Add(BtnCancel);
             tabPagePayModeDetail.Controls.Add(BtnSave);
             tabPagePayModeDetail.Controls.Add(TxtPayModeObservation);
             tabPagePayModeDetail.Controls.Add(TxtPayModeName);
@@ -216,14 +217,15 @@
             tabPagePayModeDetail.Text = "Pay Mode Details";
             tabPagePayModeDetail.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnCancel
             // 
-            button2.Image = Properties.Resources.cancel;
-            button2.Location = new Point(180, 257);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 57);
-            button2.TabIndex = 7;
-            button2.UseVisualStyleBackColor = true;
+            BtnCancel.Image = Properties.Resources.cancel;
+            BtnCancel.Location = new Point(180, 257);
+            BtnCancel.Name = "BtnCancel";
+            BtnCancel.Size = new Size(75, 57);
+            BtnCancel.TabIndex = 7;
+            BtnCancel.UseVisualStyleBackColor = true;
+            BtnCancel.Click += button2_Click;
             // 
             // BtnSave
             // 
@@ -253,6 +255,7 @@
             // 
             // TxtPayModeId
             // 
+            TxtPayModeId.Enabled = false;
             TxtPayModeId.Location = new Point(37, 40);
             TxtPayModeId.Name = "TxtPayModeId";
             TxtPayModeId.Size = new Size(153, 23);
@@ -322,7 +325,7 @@
         private TextBox TxtSearch;
         private Label label2;
         private TabPage tabPagePayModeDetail;
-        private Button button2;
+        private Button BtnCancel;
         private Button BtnSave;
         private TextBox TxtPayModeObservation;
         private TextBox TxtPayModeName;

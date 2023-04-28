@@ -21,7 +21,7 @@ namespace Supermarket_mvp.Views
         event EventHandler SearchEvent;
         event EventHandler AddNewEvent;
         event EventHandler EditEvent;
-        event EventHandler DeletEvent;
+        event EventHandler DeleteEvent;
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
 
